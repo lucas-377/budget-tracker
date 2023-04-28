@@ -9,7 +9,7 @@
         "ssr": true,
         "displayName": true,
         "preprocess": false,
-        "namespace": "project-name"
+        "namespace": "realizze"
       }
     ]
   ]

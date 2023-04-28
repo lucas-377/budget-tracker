@@ -1,6 +1,6 @@
 /**
  * Default theme of the application
- * 
+ *
  * @author Lucas Santana
  */
 
@@ -11,8 +11,14 @@ export type Theme = {
 
 export const theme = {
   colors: {
-    primary: '#303A44',
-    secondary: '#202A33'
+    gray100: '#CEFAE3', // Buttons Alt
+    gray800: '#34433B', // Text
+
+    emerald400: '#13C76F', // Brand
+    emerald500: '#1FBD6D', // Brand Hover
+    emerald600: '#14A35B', // Buttons
+    emerald700: '#0F7641', // Buttons Hover
+    emerald800: '#084023', // Titles
   },
   spacing: {
     1: '8px',

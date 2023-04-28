@@ -2,6 +2,9 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import { theme } from '../../../styles/theme';
+import Header from '../Header';
+import Footer from '../Footer';
+import { LayoutWrapper } from './styles';
 
 function Layout({ children }) {
   const site = 'https://';
@@ -11,11 +14,17 @@ function Layout({ children }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="theme-color" content={theme.colors.primary} />
+        <meta name="theme-color" content={theme.colors.emerald400} />
         <link rel="canonical" href={canonicalURL} key="canonical" />
       </Head>
 
-      <main>{children}</main>
+      <LayoutWrapper>
+        <Header />
+
+        <main>{children}</main>
+
+        <Footer />
+      </LayoutWrapper>
     </>
   );
 }

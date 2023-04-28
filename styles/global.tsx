@@ -21,8 +21,8 @@ html {
 body {
   height: 100%;
   font-size: 1.6rem; // 16px
-  color: #fff;
-  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.gray800};
+  background-color: #fff;
   font-family: ${({ theme }) => theme.fonts.text};
 
   &.overlay {
@@ -30,8 +30,12 @@ body {
   }
 }
 
+main {
+  flex: 1 1 0%;
+}
+
 input[type=checkbox] {
-  accent-color: ${({ theme }) => theme.colors.primary};
+  accent-color: ${({ theme }) => theme.colors.emerald400};
   width: 20px;
   height: 20px;
 }
@@ -42,17 +46,17 @@ input[type=checkbox] {
   height: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.emerald600};
   border-radius: 2px;
 }
 ::-webkit-scrollbar-track{
-  background: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.gray100};
 }
 
 // Text seleciton
 ::selection {
-  color: ${({ theme }) => theme.colors.primary};
-  background: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.gray100};
+  background: ${({ theme }) => theme.colors.emerald600};
 }
 
 img {
@@ -67,7 +71,7 @@ button {
 .divider-vertical {
   display: inline-block;
   width: 1px;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.gray100};
 }
 
 .container {
