@@ -11,7 +11,9 @@ export default function Index() {
       </Head>
 
       <main>
-        <h1>Hello World!</h1>
+        <div className="container">
+          <h1>Hello World!</h1>
+        </div>
       </main>
     </>
   );

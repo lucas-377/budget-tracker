@@ -75,7 +75,7 @@ button {
 }
 
 .container {
-  max-width: 1276px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
