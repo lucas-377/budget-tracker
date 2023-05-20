@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import NextLink from 'next/link';
 
 export const HeaderContainer = styled.header`
   height: 52px;
@@ -17,14 +18,52 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
 `;
 
-export const Menu = styled.ul`
+export const HeaderLogo = styled(NextLink)`
+  color: #fff;
+  text-decoration: none;
+`;
+
+export const HeaderMenu = styled.ul`
   display: flex;
   list-style: none;
 `;
 
-export const Avatar = styled.a`
-  width: 30px;
-  height: 30px;
-  border-radius: 16px;
-  overflow: hidden;
+export const HeaderMenuItem = styled.li`
+  margin: 0 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+`;
+
+export const HeaderMenuLink = styled(NextLink)`
+  text-decoration: none;
+  color: #fff;
+  text-transform: lowercase;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s;
+  opacity: 0.8;
+
+  &::after {
+    content: '';
+    position: inherit;
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 14px;
+    background: transparent;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &.active {
+    opacity: 1;
+
+    &::after {
+      width: 100%;
+      background: #fff;
+    }
+  }
 `;

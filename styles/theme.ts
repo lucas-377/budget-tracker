@@ -11,6 +11,7 @@ export type Theme = {
 
 export const theme = {
   colors: {
+    gray050: '#f1f7ef', // Background
     gray100: '#CEFAE3', // Buttons Alt
     gray800: '#34433B', // Text
 

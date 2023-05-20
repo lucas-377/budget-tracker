@@ -1,4 +1,7 @@
 import Head from 'next/head';
+import * as S from '../../../styles/shared';
+
+import DiffChart from '../../ui/DiffChart';
 
 export default function Index() {
   return (
@@ -12,7 +15,13 @@ export default function Index() {
 
       <main>
         <div className="container">
-          <h1>Hello World!</h1>
+          <div className="grid">
+            <div className="col-12 mt-5">
+              <S.Card>
+                <DiffChart />
+              </S.Card>
+            </div>
+          </div>
         </div>
       </main>
     </>

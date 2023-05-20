@@ -22,7 +22,7 @@ body {
   height: 100%;
   font-size: 1.6rem; // 16px
   color: ${({ theme }) => theme.colors.gray800};
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.gray050};
   font-family: ${({ theme }) => theme.fonts.text};
 
   &.overlay {
@@ -96,4 +96,7 @@ button {
   border: 0;
 }
 
+hr {
+  border-color: ${({ theme }) => theme.colors.gray100};
+}
 `;

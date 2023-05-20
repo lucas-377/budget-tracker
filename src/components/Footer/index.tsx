@@ -1,5 +1,14 @@
-function Header() {
-  return <h1>Footer</h1>;
+import * as C from './styles';
+
+function Footer() {
+  return (
+    <C.FooterWrapper>
+      <hr />
+      <C.FooterCopy>
+        Copyright &#169; {new Date().getFullYear()} | Lucas Santana
+      </C.FooterCopy>
+    </C.FooterWrapper>
+  );
 }
 
-export default Header;
+export default Footer;
