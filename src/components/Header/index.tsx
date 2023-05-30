@@ -39,7 +39,7 @@ function Header() {
 
         <Avatar
           label="L"
-          size="xlarge"
+          size="large"
           shape="circle"
           onClick={(e) => menu.current.toggle(e)}
         />

@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 import NextLink from 'next/link';
 
+const headerHeight = '52px';
+
 export const HeaderContainer = styled.header`
-  height: 52px;
+  height: ${headerHeight};
   background-color: ${({ theme }) => theme.colors.emerald400};
 `;
 
 export const HeaderWrapper = styled.div`
   max-width: 1076px;
   width: 100%;
-  height: 100%;
+  height: ${headerHeight};
   margin: 0 auto;
   padding: 0 16px;
 
@@ -21,6 +23,10 @@ export const HeaderWrapper = styled.div`
 export const HeaderLogo = styled(NextLink)`
   color: #fff;
   text-decoration: none;
+
+  h1 {
+    font-size: 2.3rem;
+  }
 `;
 
 export const HeaderMenu = styled.ul`
@@ -37,6 +43,7 @@ export const HeaderMenuItem = styled.li`
 `;
 
 export const HeaderMenuLink = styled(NextLink)`
+  font-size: 16px;
   text-decoration: none;
   color: #fff;
   text-transform: lowercase;

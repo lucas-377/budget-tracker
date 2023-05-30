@@ -14,13 +14,12 @@ export default createGlobalStyle<Theme>`
 
 html {
   height: 100%;
-  font-size: 62.5%; /* 10px = 1rem */
+  font-size: 12px;
   scroll-padding-top: 94px;
 }
 
 body {
   height: 100%;
-  font-size: 1.6rem; // 16px
   color: ${({ theme }) => theme.colors.gray800};
   background-color: ${({ theme }) => theme.colors.gray050};
   font-family: ${({ theme }) => theme.fonts.text};
@@ -34,38 +33,23 @@ main {
   flex: 1 1 0%;
 }
 
-input[type=checkbox] {
-  accent-color: ${({ theme }) => theme.colors.emerald400};
-  width: 20px;
-  height: 20px;
-}
-
 // Scrollbar
 ::-webkit-scrollbar {
   width: 8px;
   height: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: ${({ theme }) => theme.colors.emerald600};
+  background: ${({ theme }) => theme.colors.emerald800};
   border-radius: 2px;
 }
 ::-webkit-scrollbar-track{
-  background: ${({ theme }) => theme.colors.gray100};
+  background: ${({ theme }) => theme.colors.gray200};
 }
 
 // Text seleciton
 ::selection {
   color: ${({ theme }) => theme.colors.gray100};
   background: ${({ theme }) => theme.colors.emerald600};
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-}
-
-button {
-  cursor: pointer;
 }
 
 .divider-vertical {
@@ -85,18 +69,8 @@ button {
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
 hr {
-  border-color: ${({ theme }) => theme.colors.gray100};
+  border-color: ${({ theme }) => theme.colors.gray300};
+  border-style: solid;
 }
 `;

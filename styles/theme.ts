@@ -13,6 +13,10 @@ export const theme = {
   colors: {
     gray050: '#f1f7ef', // Background
     gray100: '#CEFAE3', // Buttons Alt
+    gray200: '#e5e8e5', // Description Text
+    gray300: '#dfdfdf', // Divider
+    gray500: '#7e7e7c', // Description Title
+    gray600: '#62635e', // Section Title
     gray800: '#34433B', // Text
 
     emerald400: '#13C76F', // Brand
@@ -20,19 +24,13 @@ export const theme = {
     emerald600: '#14A35B', // Buttons
     emerald700: '#0F7641', // Buttons Hover
     emerald800: '#084023', // Titles
-  },
-  spacing: {
-    1: '8px',
-    2: '16px',
-    3: '24px',
-    4: '32px',
-    5: '40px',
-    6: '48px',
+
+    green500: '#40c167', // Incomes
+    red500: '#c13e45', // Expenses
   },
   fonts: {
-    heading: 'Poppins, sans-serif',
+    heading: 'Nunito, sans-serif',
     text: 'Red Hat Text, sans-serif',
-    interactive: 'Red Hat Display, sans-serif',
   },
   breakpoints: {
     tablet: '860px',

@@ -1,3 +1,4 @@
+import { locale } from 'primereact/api';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import Layout from '../src/components/Layout';
@@ -12,6 +13,8 @@ import 'primeicons/primeicons.css';
 import 'primereact/resources/primereact.min.css';
 // Grid
 import 'primeflex/primeflex.css';
+// Config
+locale('pt');
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
