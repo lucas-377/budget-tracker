@@ -1,8 +1,5 @@
 import Head from 'next/head';
-import { Divider } from 'primereact/divider';
-import * as S from '../../../styles/shared';
-
-import DiffChart from '../../ui/DiffChart';
+import Hero from './Hero';
 
 export default function Index() {
   return (
@@ -14,81 +11,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div className="container">
-          <div className="grid">
-            <div className="col-12 mt-5">
-              <S.Card>
-                <div className="grid">
-                  <div className="col">
-                    <S.SmallTitle>Bem-vindo,</S.SmallTitle>
-                    <S.Title className="mb-2">Lucas Santana!</S.Title>
-
-                    <div className="grid">
-                      <div className="col">
-                        <S.Card>
-                          <S.DescriptionTitle>
-                            receita mensal
-                          </S.DescriptionTitle>
-                          <S.AmountText $variant="income">
-                            + R$ 800,00
-                          </S.AmountText>
-                        </S.Card>
-                      </div>
-                      <div className="col">
-                        <S.Card>
-                          <S.DescriptionTitle>
-                            despesa mensal
-                          </S.DescriptionTitle>
-                          <S.AmountText $variant="expense">
-                            + R$ 800,00
-                          </S.AmountText>
-                        </S.Card>
-                      </div>
-                    </div>
-                  </div>
-
-                  <Divider layout="vertical" />
-
-                  <div className="col">
-                    <S.SmallTitle>saldo geral</S.SmallTitle>
-                    <S.Title className="mb-2">
-                      <S.DescriptionTitle>R$</S.DescriptionTitle> 100.000,00
-                    </S.Title>
-
-                    <div className="grid">
-                      <div className="col">
-                        <S.Card className="text-center">
-                          <i
-                            className="pi pi-minus-circle"
-                            style={{ fontSize: '24px' }}
-                          />
-                          <p>despesa</p>
-                        </S.Card>
-                      </div>
-                      <div className="col">
-                        <S.Card className="text-center">
-                          <i
-                            className="pi pi-plus-circle"
-                            style={{ fontSize: '24px' }}
-                          />
-                          <p>receita</p>
-                        </S.Card>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </S.Card>
-            </div>
-
-            <div className="col-12">
-              <S.Card>
-                <DiffChart />
-              </S.Card>
-            </div>
-          </div>
-        </div>
-      </main>
+      <Hero />
     </>
   );
 }

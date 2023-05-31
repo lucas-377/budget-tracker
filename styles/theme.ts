@@ -27,6 +27,7 @@ export const theme = {
 
     green500: '#40c167', // Incomes
     red500: '#c13e45', // Expenses
+    blue500: '#7791f9', // Info
   },
   fonts: {
     heading: 'Nunito, sans-serif',
