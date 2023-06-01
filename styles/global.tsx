@@ -14,7 +14,7 @@ export default createGlobalStyle<Theme>`
 
 html {
   height: 100%;
-  font-size: 12px;
+  font-size: 14px;
   scroll-padding-top: 94px;
 }
 

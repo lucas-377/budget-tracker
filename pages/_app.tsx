@@ -6,7 +6,7 @@ import GlobalStyles from '../styles/global';
 import { theme } from '../styles/theme';
 
 // Theme
-import 'primereact/resources/themes/lara-light-teal/theme.css';
+import '../styles/theme.css';
 // Icons
 import 'primeicons/primeicons.css';
 // Core

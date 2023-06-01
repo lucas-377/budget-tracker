@@ -25,7 +25,7 @@ export const HeaderLogo = styled(NextLink)`
   text-decoration: none;
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.286rem; // 32px
   }
 `;
 
@@ -43,7 +43,7 @@ export const HeaderMenuItem = styled.li`
 `;
 
 export const HeaderMenuLink = styled(NextLink)`
-  font-size: 16px;
+  font-size: 1.143rem; // 16px
   text-decoration: none;
   color: #fff;
   text-transform: lowercase;

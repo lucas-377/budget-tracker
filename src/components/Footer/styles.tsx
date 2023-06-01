@@ -6,7 +6,7 @@ export const FooterWrapper = styled.footer`
 
 export const FooterCopy = styled.span`
   display: block;
-  font-size: 1rem;
+  font-size: 0.857rem; // 12px
   line-height: 1;
   text-align: center;
   padding: 8px 0;

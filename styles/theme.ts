@@ -25,6 +25,7 @@ export const theme = {
     emerald700: '#0F7641', // Buttons Hover
     emerald800: '#084023', // Titles
 
+    green100: '#e1fce9', // Button secondary
     green500: '#40c167', // Incomes
     red500: '#c13e45', // Expenses
     blue500: '#7791f9', // Info

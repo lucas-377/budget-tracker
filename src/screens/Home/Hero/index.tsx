@@ -1,12 +1,10 @@
 import { Divider } from 'primereact/divider';
-import { useState } from 'react';
 import * as S from '../../../../styles/shared';
-import { ExpenseModal, IncomeModal, ModalToggle } from './ModalToggle';
+
+import AddExpense from './AddExpense';
+import AddIncome from './AddIncome';
 
 export default function Hero() {
-  const [expenseModal, setExpenseModal] = useState<boolean>(false);
-  const [incomeModal, setIncomeModal] = useState<boolean>(false);
-
   return (
     <div className="container">
       <div className="grid">
@@ -45,26 +43,10 @@ export default function Hero() {
 
                 <div className="grid">
                   <div className="col">
-                    <S.Card className="text-center">
-                      <ModalToggle
-                        $variant="expense"
-                        onClick={() => setExpenseModal(true)}
-                      >
-                        <i className="pi pi-minus-circle" />
-                        <p>despesa</p>
-                      </ModalToggle>
-                    </S.Card>
+                    <AddExpense />
                   </div>
                   <div className="col">
-                    <S.Card className="text-center">
-                      <ModalToggle
-                        $variant="income"
-                        onClick={() => setIncomeModal(true)}
-                      >
-                        <i className="pi pi-plus-circle" />
-                        <p>receita</p>
-                      </ModalToggle>
-                    </S.Card>
+                    <AddIncome />
                   </div>
                 </div>
               </div>
@@ -72,12 +54,6 @@ export default function Hero() {
           </S.Card>
         </div>
       </div>
-
-      <ExpenseModal
-        visible={expenseModal}
-        onHide={() => setExpenseModal(false)}
-      />
-      <IncomeModal visible={incomeModal} onHide={() => setIncomeModal(false)} />
     </div>
   );
 }
