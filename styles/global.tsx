@@ -73,4 +73,8 @@ hr {
   border-color: ${({ theme }) => theme.colors.gray300};
   border-style: solid;
 }
+
+.grid {
+  margin-top: auto;
+}
 `;

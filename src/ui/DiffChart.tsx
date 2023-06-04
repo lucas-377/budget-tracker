@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
+import * as S from '../../styles/shared';
 
 export default function DiffChart() {
   const [chartData, setChartData] = useState({});
@@ -13,18 +14,26 @@ export default function DiffChart() {
     );
     const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
     const data = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      labels: [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+        'Julho',
+      ],
       datasets: [
         {
-          label: 'My First dataset',
-          backgroundColor: documentStyle.getPropertyValue('--blue-500'),
-          borderColor: documentStyle.getPropertyValue('--blue-500'),
+          label: 'Receitas',
+          backgroundColor: documentStyle.getPropertyValue('--primary-500'),
+          borderColor: documentStyle.getPropertyValue('--primary-500'),
           data: [65, 59, 80, 81, 56, 55, 40],
         },
         {
-          label: 'My Second dataset',
-          backgroundColor: documentStyle.getPropertyValue('--pink-500'),
-          borderColor: documentStyle.getPropertyValue('--pink-500'),
+          label: 'Despesas',
+          backgroundColor: documentStyle.getPropertyValue('--red-500'),
+          borderColor: documentStyle.getPropertyValue('--red-500'),
           data: [28, 48, 40, 19, 86, 27, 90],
         },
       ],
@@ -69,8 +78,14 @@ export default function DiffChart() {
   }, []);
 
   return (
-    <div className="card">
-      <Chart type="bar" data={chartData} options={chartOptions} />
+    <div className="container">
+      <div className="grid">
+        <div className="col-12">
+          <S.Card>
+            <Chart type="bar" data={chartData} options={chartOptions} />
+          </S.Card>
+        </div>
+      </div>
     </div>
   );
 }

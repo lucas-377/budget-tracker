@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Hero from './Hero';
+import DiffChart from '../../ui/DiffChart';
+import Table from './Hero/Table';
 
 export default function Index() {
   return (
@@ -12,6 +14,8 @@ export default function Index() {
       </Head>
 
       <Hero />
+      <Table />
+      <DiffChart />
     </>
   );
 }
