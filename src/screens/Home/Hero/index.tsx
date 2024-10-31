@@ -1,5 +1,5 @@
 import { Divider } from 'primereact/divider';
-import * as S from '../../../../styles/shared';
+import * as S from '@/styles/shared';
 
 import AddExpense from './AddExpense';
 import AddIncome from './AddIncome';
